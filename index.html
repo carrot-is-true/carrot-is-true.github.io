@@ -1,1 +1,82 @@
-ddddddd
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Окрасы CWITW</title>
+</head>
+<body>
+<div>
+  <div>
+    <button class="btn">сменить режим</button>
+    <span>lorem ipsum dolor</span>
+  </div>
+   <div>
+    <p class='second'>lorem ipsum dolor</p>
+  </div>
+   <div>
+    <i>lorem ipsum dolor</i>
+  </div>
+   <div>
+    <p id='four'>lorem ipsum dolor</p>
+  </div>
+</div>
+
+<script>$('.btn').on('click', function(){
+	$('div').toggleClass('change-mode');
+  $('span').toggleClass('change-mode2');
+  $('i').toggleClass('change-mode3');
+  $('#four').toggleClass('change-mode4');
+  $('.second').toggleClass('change-mode5');
+});
+.change-mode {
+  background: black;
+  color: white;
+}
+
+.change-mode:hover{
+  color: #aaa;
+  background-color: #111;
+}
+
+.change-mode2 {
+  background: yellow;
+  color: red;
+}
+
+.change-mode2:hover{
+  color: #bbb;
+  background-color: #222;
+}
+
+.change-mode3 {
+  background: pink;
+  color: green;
+}
+
+.change-mode3:hover{
+  color: #ccc;
+  background-color: #333;
+}
+
+.change-mode4 {
+  background: grey;
+  color: orange;
+}
+
+.change-mode4:hover{
+  color: #ddd;
+  background-color: #444;
+}
+
+.change-mode5 {
+  background: purple;
+  color: brown;
+}
+
+.change-mode5:hover{
+  color: #eee;
+  background-color: #555;
+}</script>
+
+</body>
+</html>
