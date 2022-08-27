@@ -4,15 +4,21 @@
 <meta charset="UTF-8">
 <title>Окрасы CWITW</title>
 </head>
-<body><script>$('.btn').on('click', function(){
-  $('#four').toggleClass('change-mode');
-  $('#h').toggleClass('change-mode');
-});</script>
+<body><script>var btn = document.getElementById('btn');
+
+btn.onclick = function() {
+	var g = document.getElementById('h');
+	var f = document.getElementById('four');
+    document.getElementById(h).classList.toggle('change-mode');
+}</script>
 <style>#four, #h {
 	display: none;
 }
 
 .change-mode:hover{
+	display: block;
+}
+.change-mode{
 	display: block;
 }
 }</style>
