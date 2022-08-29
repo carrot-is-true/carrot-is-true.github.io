@@ -1,28 +1,276 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Окрасы CWITW</title>
+	<meta charset="UTF-8">
+	<title>Окрасы CWITW</title>
 </head>
-<body><script type="text/javascript">
-
-function openbox(id){
-    display = document.getElementById(id).style.display;
-
-    if(display=='none'){
-       document.getElementById(id).style.display='block';
-    }else{
-       document.getElementById(id).style.display='none';
-    }
-}
-</script>
 <style>
-</style>
-<a href="#" onclick="openbox('box'); return false">Белые</a>
-<div id="box" style="display: none;">
-    <img src='https://cwitw.ru/game/pic/cat/furry/fur/base/clean/1.png'>
+    .wh {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.wh1 {
+  position: absolute;
+  top: 50px;
+  left: 400px;
+}
+#box {
+  position: relative;
+}
+    
+    </style>
+<body>
+<script>unction openbox(id) {
+  display = document.getElementById(id).style.display;
+
+  if (display == 'none') {
+    document.getElementById(id).style.display = 'block';
+  } else {
+    document.getElementById(id).style.display = 'none';
+  }
+}
+let furry = 'furry';
+let one = '4'
+function getUrlEyes(fur, number, id) {
+  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/eyes/' + number + '.png';
+  document.getElementById(id).src = url; 
+}
+function getUrlImg(fur, type, number, id) {
+  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/fur/base/' + type + '/' + number + '.png';
+  document.getElementById(id).src = url;
+  let numb = number;
+  console.log(url);
+  return numb;
+}
+function getUrlBelly(fur, number, id) {
+  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/fur/points/' + number + '.png';
+  document.getElementById(id).src = url;
+  console.log(url);
+}
+function getUrlStrip(fur, type, number, id) {
+  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/fur/base/stripes' + type + '/' + number + '.png';
+  document.getElementById(id).src = url;
+  let numb = number;
+  console.log(url);
+  return numb;
+}
+
+
+
+  var e = document.getElementById("ddlViewBy");
+function onChange() {
+
+  var value = e.value;
+  var text = e.options[e.selectedIndex].text;
+  e.onchange = onChange;
+    getUrlImg('furry', 'clean', value, '4'); getUrlImg('smooth', 'clean', value, 'e')
+}
+  var gg = document.getElementById("eyes");
+function onChangeE() {
+
+  var value = gg.value;
+  var text = gg.options[gg.selectedIndex].text;
+  gg.onchange = onChangeE;
+  getUrlEyes('furry', value, 'd'); getUrlEyes('smooth', value, 's');
+}
+  var aa = document.getElementById("cheeks");
+function onChangeC() {
+  var value = aa.value;
+  var text = aa.options[e.selectedIndex].text;
+  aa.onchange = onChangeC;
+  getUrlBelly('furry', value, 'belly'); getUrlBelly('smooth', value, 'bell');
+}
+var aaa = document.getElementById("stripes");
+
+let clas = 'stripes2'
+function onChanged() {
+  var value = aaa.value;
+  aaa.onchange = onChanged;
+  var text = aaa.options[aaa.selectedIndex].text;
+  getUrlImg('furry', text, value, '4'); getUrlImg('smooth', text, value, 'e');
+}
+var str = document.getElementById("stripes2");
+function onChans() {
+  var brandImg = document.getElementById('stripes2');
+  var val = str.value;
+  var id = brandImg.className;
+   console.log(id)
+  str.onchange = onChans;
+  var te = str.options[str.selectedIndex].text;
+  getUrlStrip('furry', 2, val, '4'); getUrlStrip('smooth', 2, val, 'e');
+}
+var stsr = document.getElementById("spots")
+function onChanss() {
+    var valw = stsr.value;
+    stsr.onchange = onChanss;
+    var te = stsr.options[str.selectedIndex].text;
+    getUrlImg('furry', 'spots1', valw, '4'); getUrlImg('smooth', 'spots1', valw, 'e');
+  }
+function onChans() {
+  var brandImg = document.getElementById('stripes2');
+  var val = str.value;
+  var id = brandImg.className;
+  console.log(id)
+  str.onchange = onChans;
+  var te = str.options[str.selectedIndex].text;
+  getUrlStrip('furry', 2, val, '4'); getUrlStrip('smooth', 2, val, 'e');
+}
+var sw = document.getElementById("pestr1")
+function onChansss() {
+  var sws = sw.value;
+  sw.onchange = onChansss;
+  var te = sw.options[sw.selectedIndex].text;
+  getUrlImg('furry', te, sws, '4'); getUrlImg('smooth', te, sws, 'e');
+}
+var pestr = document.getElementById("pestr2")
+function onPestr() {
+  var sws = pestr.value;
+  pestr.onchange = onPestr;
+  var te = pestr.options[pestr.selectedIndex].text;
+  getUrlImg('furry', te, sws, '4'); getUrlImg('smooth', te, sws, 'e');
+}
+onChange();
+onChangeE();
+onChangeC();
+onChanged();
+onChans();
+onChanss();
+onChansss()
+onPestr();</script>    
+    
+	<p>Прошу простить за неудобный интерфейс и корявую работу. При обнаружении багов, недоработок или при наличии ваших дополнений пишите в <a href='https://vk.com/why_are_u_here1'>ВК мне</a> или на почту <span style="text-decoration: underline; color: violet;">lunnocrylaya@yandex.ru</span></p>
+	<form>
+		<select id="ddlViewBy">
+	    <option value="1">Белый</option>
+	    <option value="2">2</option>
+	    <option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+	    <option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="12">12</option>
+			<option value="14">Чёрный</option>
+	  </select>
+	</form>
+		<form>
+			<select id="stripes">
+					    <option value="2">stripes1</option>
+							<option value="3">stripes1</option>
+							<option value="4">stripes1</option>
+							<option value="5">stripes1</option>
+					    <option value="6">stripes1</option>
+							<option value="7">stripes1</option>
+							<option value="8">stripes1</option>
+							<option value="9">stripes1</option>
+							<option value="12">stripes1</option>
+							<option value="14">stripes1</option>
+					  </select>
+		</form>
+		<form>
+			<select id="stripes2">
+							<option value="2" class='stripes2'>stripes2</option>
+							<option value="3" class='stripes2'>stripes2</option>
+							<option value="4" class='stripes2' id='stripes2'>stripes2</option>
+							<option value="5" class='stripes2'>stripes2</option>
+							<option value="6" class='stripes2'>stripes2</option>
+							<option value="7" class='stripes2'>stripes2</option>
+							<option value="8" class='stripes2'>stripes2</option>
+							<option value="9" class='stripes2'>stripes2</option>
+							<option value="12" class='stripes2'>stripes2</option>
+							<option value="14" class='stripes2'>stripes2</option>
+							</select>
+			</form>
+		<form>
+			<select id="spots">
+									<option value="2" class='stripes2'>spot1</option>
+									<option value="3" class='stripes2'>spot1</option>
+									<option value="4" class='stripes2' id='stripes2'>spot1</option>
+									<option value="5" class='stripes2'>spot1</option>
+									<option value="6" class='stripes2'>spot1</option>
+									<option value="7" class='stripes2'>spot1</option>
+									<option value="8" class='stripes2'>spot1</option>
+									<option value="9" class='stripes2'>spot1</option>
+									<option value="12" class='stripes2'>spot1</option>
+									<option value="14" class='stripes2'>spot1</option>
+									</select>
+		</form>
+		<form>
+			<select id="pestr1">
+											<option value="2" class='stripes2'>pestr1</option>
+											<option value="3" class='stripes2'>pestr1</option>
+											<option value="4" class='stripes2' id='stripes2'>pestr1</option>
+											<option value="5" class='stripes2'>pestr1</option>
+											<option value="6" class='stripes2'>pestr1</option>
+											<option value="7" class='stripes2'>pestr1</option>
+											<option value="8" class='stripes2'>pestr1</option>
+											<option value="9" class='stripes2'>pestr1</option>
+											<option value="12" class='stripes2'>pestr1</option>
+											<option value="14" class='stripes2'>pestr1</option>
+											</select>
+		</form>
+
+					<select id="pestr2">
+																<option value="2" class='stripes2'>pestr2</option>
+																<option value="3" class='stripes2'>pestr2</option>
+																<option value="4" class='stripes2' id='stripes2' selected>pestr2</option>
+																<option value="5" class='stripes2'>pestr2</option>
+																<option value="6" class='stripes2'>pestr2</option>
+																<option value="7" class='stripes2'>pestr2</option>
+																<option value="8" class='stripes2'>pestr2</option>
+																<option value="9" class='stripes2'>pestr2</option>
+																<option value="12" class='stripes2'>pestr2</option>
+																<option value="14" class='stripes2'>pestr2</option>
+																</select>
+					</form>
+
+		<form>
+			<select id="eyes">
+			    <option value="1">1 глаза</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+			    <option value="7" selected>7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+			  </select>
+		</form>
+	
+			<form>
+				<select id="cheeks">
+						    <option value="1">1 шерстка</option>
+						    <option value="2">2</option>
+						    <option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+						    <option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11" selected>11</option>
+								<option value="12">12</option>
+						  </select>
+			</form>
+	<div id="box" style="//display: none;//">
+		<div id="green" style="//display: none;//">
+			<img class='wh' id='4'>
+  		<img class='wh1' id='e'>
+			<img class='wh' id='belly'>
+			<img class='wh1' id='bell'>	
+			<img class='wh' id='d'>
+			<img class='wh1' id='s'>
+		</div>
 </div>
 
-
 </body>
+
 </html>
