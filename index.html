@@ -22,123 +22,7 @@
     
     </style>
 <body>
-<script>function openbox(id) {
-  display = document.getElementById(id).style.display;
 
-  if (display == 'none') {
-    document.getElementById(id).style.display = 'block';
-  } else {
-    document.getElementById(id).style.display = 'none';
-  }
-}
-let furry = 'furry';
-let one = '4'
-function getUrlEyes(fur, number, id) {
-  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/eyes/' + number + '.png';
-  document.getElementById(id).src = url; 
-}
-function getUrlImg(fur, type, number, id) {
-  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/fur/base/' + type + '/' + number + '.png';
-  document.getElementById(id).src = url;
-  let numb = number;
-  console.log(url);
-  return numb;
-}
-function getUrlBelly(fur, number, id) {
-  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/fur/points/' + number + '.png';
-  document.getElementById(id).src = url;
-  console.log(url);
-}
-function getUrlStrip(fur, type, number, id) {
-  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/fur/base/stripes' + type + '/' + number + '.png';
-  document.getElementById(id).src = url;
-  let numb = number;
-  console.log(url);
-  return numb;
-}
-
-
-
-  var e = document.getElementById("ddlViewBy");
-function onChange() {
-
-  var value = e.value;
-  var text = e.options[e.selectedIndex].text;
-  e.onchange = onChange;
-    getUrlImg('furry', 'clean', value, '4'); getUrlImg('smooth', 'clean', value, 'e')
-}
-  var gg = document.getElementById("eyes");
-function onChangeE() {
-
-  var value = gg.value;
-  var text = gg.options[gg.selectedIndex].text;
-  gg.onchange = onChangeE;
-  getUrlEyes('furry', value, 'd'); getUrlEyes('smooth', value, 's');
-}
-  var aa = document.getElementById("cheeks");
-function onChangeC() {
-  var value = aa.value;
-  var text = aa.options[e.selectedIndex].text;
-  aa.onchange = onChangeC;
-  getUrlBelly('furry', value, 'belly'); getUrlBelly('smooth', value, 'bell');
-}
-var aaa = document.getElementById("stripes");
-
-let clas = 'stripes2'
-function onChanged() {
-  var value = aaa.value;
-  aaa.onchange = onChanged;
-  var text = aaa.options[aaa.selectedIndex].text;
-  getUrlImg('furry', text, value, '4'); getUrlImg('smooth', text, value, 'e');
-}
-var str = document.getElementById("stripes2");
-function onChans() {
-  var brandImg = document.getElementById('stripes2');
-  var val = str.value;
-  var id = brandImg.className;
-   console.log(id)
-  str.onchange = onChans;
-  var te = str.options[str.selectedIndex].text;
-  getUrlStrip('furry', 2, val, '4'); getUrlStrip('smooth', 2, val, 'e');
-}
-var stsr = document.getElementById("spots")
-function onChanss() {
-    var valw = stsr.value;
-    stsr.onchange = onChanss;
-    var te = stsr.options[str.selectedIndex].text;
-    getUrlImg('furry', 'spots1', valw, '4'); getUrlImg('smooth', 'spots1', valw, 'e');
-  }
-function onChans() {
-  var brandImg = document.getElementById('stripes2');
-  var val = str.value;
-  var id = brandImg.className;
-  console.log(id)
-  str.onchange = onChans;
-  var te = str.options[str.selectedIndex].text;
-  getUrlStrip('furry', 2, val, '4'); getUrlStrip('smooth', 2, val, 'e');
-}
-var sw = document.getElementById("pestr1")
-function onChansss() {
-  var sws = sw.value;
-  sw.onchange = onChansss;
-  var te = sw.options[sw.selectedIndex].text;
-  getUrlImg('furry', te, sws, '4'); getUrlImg('smooth', te, sws, 'e');
-}
-var pestr = document.getElementById("pestr2")
-function onPestr() {
-  var sws = pestr.value;
-  pestr.onchange = onPestr;
-  var te = pestr.options[pestr.selectedIndex].text;
-  getUrlImg('furry', te, sws, '4'); getUrlImg('smooth', te, sws, 'e');
-}
-onChange();
-onChangeE();
-onChangeC();
-onChanged();
-onChans();
-onChanss();
-onChansss()
-onPestr();</script>    
     
 	<p>Прошу простить за неудобный интерфейс и корявую работу. При обнаружении багов, недоработок или при наличии ваших дополнений пишите в <a href='https://vk.com/why_are_u_here1'>ВК мне</a> или на почту <span style="text-decoration: underline; color: violet;">lunnocrylaya@yandex.ru</span></p>
 	<form>
@@ -270,7 +154,123 @@ onPestr();</script>
 			<img class='wh1' id='s'>
 		</div>
 </div>
+<script>function openbox(id) {
+  display = document.getElementById(id).style.display;
 
+  if (display == 'none') {
+    document.getElementById(id).style.display = 'block';
+  } else {
+    document.getElementById(id).style.display = 'none';
+  }
+}
+let furry = 'furry';
+let one = '4'
+function getUrlEyes(fur, number, id) {
+  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/eyes/' + number + '.png';
+  document.getElementById(id).src = url; 
+}
+function getUrlImg(fur, type, number, id) {
+  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/fur/base/' + type + '/' + number + '.png';
+  document.getElementById(id).src = url;
+  let numb = number;
+  console.log(url);
+  return numb;
+}
+function getUrlBelly(fur, number, id) {
+  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/fur/points/' + number + '.png';
+  document.getElementById(id).src = url;
+  console.log(url);
+}
+function getUrlStrip(fur, type, number, id) {
+  let url = 'https://cwitw.ru/game/pic/cat/' + fur + '/fur/base/stripes' + type + '/' + number + '.png';
+  document.getElementById(id).src = url;
+  let numb = number;
+  console.log(url);
+  return numb;
+}
+
+
+
+  var e = document.getElementById("ddlViewBy");
+function onChange() {
+
+  var value = e.value;
+  var text = e.options[e.selectedIndex].text;
+  e.onchange = onChange;
+    getUrlImg('furry', 'clean', value, '4'); getUrlImg('smooth', 'clean', value, 'e')
+}
+  var gg = document.getElementById("eyes");
+function onChangeE() {
+
+  var value = gg.value;
+  var text = gg.options[gg.selectedIndex].text;
+  gg.onchange = onChangeE;
+  getUrlEyes('furry', value, 'd'); getUrlEyes('smooth', value, 's');
+}
+  var aa = document.getElementById("cheeks");
+function onChangeC() {
+  var value = aa.value;
+  var text = aa.options[e.selectedIndex].text;
+  aa.onchange = onChangeC;
+  getUrlBelly('furry', value, 'belly'); getUrlBelly('smooth', value, 'bell');
+}
+var aaa = document.getElementById("stripes");
+
+let clas = 'stripes2'
+function onChanged() {
+  var value = aaa.value;
+  aaa.onchange = onChanged;
+  var text = aaa.options[aaa.selectedIndex].text;
+  getUrlImg('furry', text, value, '4'); getUrlImg('smooth', text, value, 'e');
+}
+var str = document.getElementById("stripes2");
+function onChans() {
+  var brandImg = document.getElementById('stripes2');
+  var val = str.value;
+  var id = brandImg.className;
+   console.log(id)
+  str.onchange = onChans;
+  var te = str.options[str.selectedIndex].text;
+  getUrlStrip('furry', 2, val, '4'); getUrlStrip('smooth', 2, val, 'e');
+}
+var stsr = document.getElementById("spots")
+function onChanss() {
+    var valw = stsr.value;
+    stsr.onchange = onChanss;
+    var te = stsr.options[str.selectedIndex].text;
+    getUrlImg('furry', 'spots1', valw, '4'); getUrlImg('smooth', 'spots1', valw, 'e');
+  }
+function onChans() {
+  var brandImg = document.getElementById('stripes2');
+  var val = str.value;
+  var id = brandImg.className;
+  console.log(id)
+  str.onchange = onChans;
+  var te = str.options[str.selectedIndex].text;
+  getUrlStrip('furry', 2, val, '4'); getUrlStrip('smooth', 2, val, 'e');
+}
+var sw = document.getElementById("pestr1")
+function onChansss() {
+  var sws = sw.value;
+  sw.onchange = onChansss;
+  var te = sw.options[sw.selectedIndex].text;
+  getUrlImg('furry', te, sws, '4'); getUrlImg('smooth', te, sws, 'e');
+}
+var pestr = document.getElementById("pestr2")
+function onPestr() {
+  var sws = pestr.value;
+  pestr.onchange = onPestr;
+  var te = pestr.options[pestr.selectedIndex].text;
+  getUrlImg('furry', te, sws, '4'); getUrlImg('smooth', te, sws, 'e');
+}
+onChange();
+onChangeE();
+onChangeC();
+onChanged();
+onChans();
+onChanss();
+onChansss()
+onPestr();</script>    
 </body>
 
 </html>
