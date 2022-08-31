@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Окрасы CWITW</title>
+	<title>Окрасы CWITW/Вилд</title>
 </head>
 <style>
-    .wh {
+.wh {
   position: absolute;
   top: 50px;
   left: 50px;
@@ -19,131 +19,140 @@
 #box {
   position: relative;
 }
-    
+.whyallthemonsterscomeoutatnight {
+  background-color: rgba(255, 255, 255, 0.719) ;
+}
+#whydowesleepwherewewanttohide {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#boxxx {
+  display: none;
+}
     </style>
 <body>
+<!DOCTYPE html>
+<html>
 
-    
-	<p>Прошу простить за неудобный интерфейс и корявую работу. При обнаружении багов, недоработок или при наличии ваших дополнений пишите в <a href='https://vk.com/why_are_u_here1'>ВК мне</a> или на почту <span style="text-decoration: underline; color: violet;">lunnocrylaya@yandex.ru</span></p>
+<head>
+	<meta charset="UTF-8">
+	<title>Окрасы CWITW</title>
+</head>
+<p class='whyallthemonsterscomeoutatnight' id='whydowesleepwherewewanttohide' onclick="counting();">Номер локации(кликни): <a id="clicks"></a></p>
+<body id="body">
+	<p class='whyallthemonsterscomeoutatnight'>Прошу простить за неудобный интерфейс и корявую работу.<br> При обнаружении багов, недоработок или при наличии ваших дополнений пишите в <a href='https://vk.com/why_are_u_here1'>ВК мне</a> или на почту <span style="text-decoration: underline; color: violet;">lunnocrylaya@yandex.ru</span></p>
+	<p class='whyallthemonsterscomeoutatnight'>Если элемента нет - значит, такая совместимость недоступна, например, не бывает полосатых чёрных котов в вилде.<br>Иногда картинок окрасов просто нет, тогда обновите страницу. Это жестокая ошибка кода, программиста стоит зажарить и съесть.</p>
 	<form>
 		<select id="ddlViewBy">
-	    <option value="1">Белый</option>
-	    <option value="2">2</option>
-	    <option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-	    <option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="12">12</option>
-			<option value="13">Чёрный</option>
-	  </select>
-	</form>
-		<form>
-			<select id="stripes">
-					    <option value="2">stripes1</option>
-							<option value="3">stripes1</option>
-							<option value="4">stripes1</option>
-							<option value="5">stripes1</option>
-					    <option value="6">stripes1</option>
-							<option value="7">stripes1</option>
-							<option value="8">stripes1</option>
-							<option value="9">stripes1</option>
-							<option value="12">stripes1</option>
-							<option value="13">stripes1</option>
-					  </select>
-		</form>
-		<form>
-			<select id="stripes2">
-							<option value="2" class='stripes2'>stripes2</option>
-							<option value="3" class='stripes2'>stripes2</option>
-							<option value="4" class='stripes2' id='stripes2'>stripes2</option>
-							<option value="5" class='stripes2'>stripes2</option>
-							<option value="6" class='stripes2'>stripes2</option>
-							<option value="7" class='stripes2'>stripes2</option>
-							<option value="8" class='stripes2'>stripes2</option>
-							<option value="9" class='stripes2'>stripes2</option>
-							<option value="12" class='stripes2'>stripes2</option>
-							<option value="13" class='stripes2'>stripes2</option>
-							</select>
-			</form>
-		<form>
-			<select id="spots">
-									<option value="2" class='stripes2'>spot1</option>
-									<option value="3" class='stripes2'>spot1</option>
-									<option value="4" class='stripes2' id='stripes2'>spot1</option>
-									<option value="5" class='stripes2'>spot1</option>
-									<option value="6" class='stripes2'>spot1</option>
-									<option value="7" class='stripes2'>spot1</option>
-									<option value="8" class='stripes2'>spot1</option>
-									<option value="9" class='stripes2'>spot1</option>
-									<option value="12" class='stripes2'>spot1</option>
-									<option value="13" class='stripes2'>spot1</option>
-									</select>
-		</form>
-		<form>
-			<select id="pestr1">
-											<option value="2" class='stripes2'>pestr1</option>
-											<option value="3" class='stripes2'>pestr1</option>
-											<option value="4" class='stripes2' id='stripes2'>pestr1</option>
-											<option value="5" class='stripes2'>pestr1</option>
-											<option value="6" class='stripes2'>pestr1</option>
-											<option value="7" class='stripes2'>pestr1</option>
-											<option value="8" class='stripes2'>pestr1</option>
-											<option value="9" class='stripes2'>pestr1</option>
-											<option value="12" class='stripes2'>pestr1</option>
-											<option value="13" class='stripes2'>pestr1</option>
-											</select>
-		</form>
-
-					<select id="pestr2">
-																<option value="2" class='stripes2'>pestr2</option>
-																<option value="3" class='stripes2'>pestr2</option>
-																<option value="4" class='stripes2' id='stripes2' selected>pestr2</option>
-																<option value="5" class='stripes2'>pestr2</option>
-																<option value="6" class='stripes2'>pestr2</option>
-																<option value="7" class='stripes2'>pestr2</option>
-																<option value="8" class='stripes2'>pestr2</option>
-																<option value="9" class='stripes2'>pestr2</option>
-																<option value="12" class='stripes2'>pestr2</option>
-																<option value="13" class='stripes2'>pestr2</option>
-																</select>
-					</form>
-
-		<form>
-			<select id="eyes">
-			    <option value="1">1 глаза</option>
+			    <option value="1">Белый</option>
 			    <option value="2">2</option>
 			    <option value="3">3</option>
 					<option value="4">4</option>
 					<option value="5">5</option>
 					<option value="6">6</option>
-			    <option value="7" selected>7</option>
+			    <option value="7">7</option>
 					<option value="8">8</option>
 					<option value="9">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
 					<option value="12">12</option>
+					<option value="13">Чёрный</option>
 			  </select>
-		</form>
+	</form>
+	<form>
+		<select id="stripes">
+							    <option value="2">stripes1</option>
+									<option value="3">stripes1</option>
+									<option value="4">stripes1</option>
+									<option value="5">stripes1</option>
+							    <option value="6">stripes1</option>
+									<option value="7">stripes1</option>
+									<option value="8">stripes1</option>
+									<option value="9">stripes1</option>
+									<option value="12">stripes1</option>
+							  </select>
+	</form>
+	<form>
+		<select id="stripes2">
+									<option value="2" class='stripes2'>stripes2</option>
+									<option value="3" class='stripes2'>stripes2</option>
+									<option value="4" class='stripes2' id='stripes2'>stripes2</option>
+									<option value="5" class='stripes2'>stripes2</option>
+									<option value="6" class='stripes2'>stripes2</option>
+									<option value="7" class='stripes2'>stripes2</option>
+									<option value="8" class='stripes2'>stripes2</option>
+									<option value="9" class='stripes2'>stripes2</option>
+									<option value="12" class='stripes2'>stripes2</option>
+									</select>
+	</form>
+	<form>
+		<select id="spots">
+											<option value="2" class='stripes2'>spot1</option>
+											<option value="3" class='stripes2'>spot1</option>
+											<option value="4" class='stripes2' id='stripes2'>spot1</option>
+											<option value="5" class='stripes2'>spot1</option>
+											<option value="6" class='stripes2'>spot1</option>
+											<option value="7" class='stripes2'>spot1</option>
+											<option value="8" class='stripes2'>spot1</option>
+											<option value="9" class='stripes2'>spot1</option>
+											<option value="12" class='stripes2'>spot1</option>
+											<option value="13" class='stripes2'>spot1</option>
+											</select>
+	</form>
+	<form>
+		<select id="pestr1">
+													<option value="2" class='stripes2'>pestr1</option>
+													<option value="3" class='stripes2'>pestr1</option>
+													<option value="4" class='stripes2' id='stripes2'>pestr1</option>
+													<option value="5" class='stripes2'>pestr1</option>
+													<option value="8" class='stripes2'>pestr1</option>
+													<option value="13" class='stripes2'>pestr1</option>
+													</select>
+	</form>
 	
-			<form>
-				<select id="cheeks">
-						    <option value="1">1 шерстка</option>
-						    <option value="2">2</option>
-						    <option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-						    <option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10</option>
-								<option value="11" selected>11</option>
-								<option value="12">12</option>
-						  </select>
-			</form>
+	<select id="pestr2">
+																		<option value="2" class='stripes2'>pestr2</option>
+																		<option value="3" class='stripes2'>pestr2</option>
+																		<option value="4" class='stripes2' id='stripes2'>pestr2</option>
+																		<option value="5" class='stripes2'>pestr2</option>
+																		<option value="8" class='stripes2'>pestr2</option>
+																		<option value="13" class='stripes2'>pestr2</option>
+																		</select>
+	</form>
+	
+	<form>
+		<select id="eyes">
+					    <option value="1">1 глаза</option>
+					    <option value="2">2</option>
+					    <option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+					    <option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+					  </select>
+	</form>
+	
+	<form>
+		<select id="cheeks">
+								    <option value="1">1 шерстка</option>
+								    <option value="2">2</option>
+								    <option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+								    <option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+								  </select>
+	</form>
 	<div id="box" style="//display: none;//">
 		<div id="green" style="//display: none;//">
 			<img class='wh' id='4'>
@@ -154,6 +163,23 @@
 			<img class='wh1' id='s'>
 		</div>
 </div>
+
+<img id='checj' style="display: none;" onerror="imgError();">
+<a onclick="openbox('boxxx');" style="cursor: pointer; position: relative; top: 240px; text-size: 6px;">P.s.</a>
+<div id="boxxx" style="display: none; position: relative; top: 240px;">
+пожалуйста, помогите, напишите мне все цвета глаз и тела, а то тёмно-бурый или тёмно-коричневый?
+
+
+
+
+
+
+</div>
+
+
+</body>
+
+</html>
 <script>function openbox(id) {
   display = document.getElementById(id).style.display;
 
@@ -270,7 +296,109 @@ onChanged();
 onChans();
 onChanss();
 onChansss()
-onPestr();</script>    
+onPestr();
+
+
+/*function myFunction() {
+  var x = document.getElementById("demo");
+  var body = document.getElementsByTagName('body');
+  body.style.background-image = "https://cwitw.ru/game/pic/back/background.111.png";
+  x.style.color = "black";
+}*/
+
+
+
+function getUrlBack(click) {
+  var clickc = click;
+  let url = 'https://cwitw.ru/game/pic/back/background' + clickc + '.png';
+  document.getElementById('body').style.backgroundImage = "url('" + url + "')";
+  document.getElementById('checj').src = url;
+  console.log(url);
+}
+
+function imgError() {
+  counting();
+}
+
+
+var clicks = 0;
+function counting() {
+  clicks++;
+  document.getElementById("clicks").innerHTML = clicks;
+  if (clicks >= 10) {
+    playSound();
+  }
+  if (clicks === 2) {
+    getUrlBack('.111')
+  }
+  if (clicks === 3) {
+    playSound();
+  }
+  if (clicks > 3) {
+    playSound();
+  }
+  if (clicks === 1) {
+    getUrlBack('1')
+  }
+}
+/*var audio = document.getElementById("audio");
+function playSound() {
+  audio.currentTime = 0;
+  audio.play();
+}*/
+function playSound() {
+  getUrlBack(clicks);
+}
+
+
+
+let arr = ['ddlViewBy', 'stripes', 'stripes2', 'spots', 'pestr1'];
+let color = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '12', '13'];
+let stripess = ['2', '3', '4', '5', '6', '7', '8', '9', '12'];
+let spotss = ['2', '3', '4', '5', '6', '7', '8', '9', '12', '13'];
+let pestrr = ['2', '3', '4', '5', '8', '13'];
+function arrayRandElement(arr) {
+  var rand = Math.floor(Math.random() * arr.length);
+  return arr[rand];
+}
+let s = arrayRandElement(arr);
+console.log(s);
+//document.getElementById(col).value = '7';
+function randomInteger(min, max) {
+  // случайное число от min до (max+1)
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+document.getElementById('eyes').value = randomInteger(1, 13);
+document.getElementById('cheeks').value = randomInteger(1, 12);
+var randomnum = randomInteger(0, 5);
+console.log(randomnum);
+if (randomnum == 0) {
+  let sd = randomInteger(2, 13);
+  document.getElementById('ddlViewBy').value = sd;
+}
+else if (randomnum === 1) {
+  let sd = randomInteger(2, 13);
+  document.getElementById('stripes').value = sd;
+}
+else if (randomnum === 2) {
+  let sd = randomInteger(2, 13);
+  document.getElementById('stripes2').value = sd;
+  console.log(sd)
+}
+else if (randomnum === 3) {
+  let sd = randomInteger(2, 13);
+  document.getElementById('spots').value = sd;
+}
+else if (randomnum === 4) {
+  let sd = randomInteger(2, 13);
+  document.getElementById('pestr1').value = sd;
+}
+else if (randomnum === 5) {
+  let sd = randomInteger(2, 13);
+  document.getElementById('pestr2').value = sd;
+}
+</script>    
 </body>
 
 </html>
